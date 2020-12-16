@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    var a1 = prompt('请输入数字1');
+    var a2 = prompt('请输入数字2');
+    // var a1 = parseInt(a1);
+    // var a2 = parseInt(a2);
+
+    var a1 = parseFloat(a1);
+    var a2 = parseFloat(a2);
+    if(isNaN(a1)){
+        alert('第一个是非数字')
+    }else if(isNaN(a2)){
+    alert('第二个是非数字')
+    }
+    else{
+        var b1 = a1 + a2;
+    alert(b1);
+}
+</script>    
+</body>
+</html>
