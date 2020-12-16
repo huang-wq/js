@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var a =78892;
+    var b1 =parseInt(a/3600);
+    var b2 =parseInt(a% 3600 / 60);
+    var b3 =parseInt(a% 3600 % 60)
+  if(b1 < 10){
+         console.log('0'+b1);
+  }
+  if(b2 < 10){
+         console.log('0'+b2);
+  }
+  if(b3 < 10){
+         console.log('0'+b3);
+  }
+   console.log(':',b1,':',b2,':',b3);
+   
+    
+</script>
+</html>
