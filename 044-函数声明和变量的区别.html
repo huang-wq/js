@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+// 函数声明定义的函数，
+// 函数声明定义的函数，解析器会做函数声明的提升，
+// 函数声明的提升是指在代码开始执行前，
+// 解析器会把所有用函数声明定义的函数放到代码的顶部
+    // aa('leo');//可以改变位置
+    // console.log(aa);
+    // function aa (name){
+    //    console.log('hellow'+name);
+    // };
+    
+  
+ //函数表达式定义的函数没有函数声明的提升,只有变量声明提升
+ //所以可以输出函数名为未赋值的变量，但改变函数调用方式的顺序将无法输出会报错
+   console.log(aa);
+    var aa =  function(name){
+     console.log('hellow'+name);
+     };
+     aa('le');//位置改变不能在函数上面
+  
+</script>
+</html>
