@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function zz(name,age,obj){
+        //name=name1 age=age1
+        console.log('this is'+name);
+        console.log('he is '+age);
+        name = 'tomm'//基本数据类型复制的是值，所以两次打印不一样
+        console.log('name ::'+name);
+        obj.name ='peter'; //引用类型复制的是地址（指针）所以两次打印出一样
+      console.log('obj ::',obj );
+    }
+    // zz('tom',18)
+    // zz(18,'tom')
+
+    var name1 ='tom';
+    var age1  =19;
+    var obj1 ={
+        name:'haha',
+        age:20
+    }
+    zz(name1,age1,obj1);
+    console.log('name1 ::'+name1);
+    console.log('obj1 ::',obj1);
+</script>
+</html>
